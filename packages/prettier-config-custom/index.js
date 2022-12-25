@@ -5,7 +5,5 @@ module.exports = {
   useTabs: false,
   semi: true,
   singleQuote: true,
-  endOfLine: 'lf',
-  //! you may not need this plugin if you are not using tailwindcss
-  plugins: [require.resolve('prettier-plugin-tailwindcss')],
+  endOfLine: "lf",
 };

@@ -1,12 +1,15 @@
 {
-  "name": "web",
-  "version": "0.0.0",
+  "name": "bloghive-client",
+  "description": "Bloghive client app is a Next.js app that uses Tailwind CSS and TypeScript.",
+  "version": "1.0.0",
   "private": true,
+  "license": "Apache-2.0",
   "scripts": {
     "dev": "next dev -p 8080",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "npx eslint . --report-unused-disable-directives --fix",
+    "format": "prettier --write **/*.{js,ts,tsx,css,md,json,yml,yaml}"
   },
   "dependencies": {
     "next": "13.1.1",
@@ -22,6 +25,9 @@
     "eslint-config-custom": "workspace:*",
     "next-transpile-modules": "10.0.0",
     "postcss": "^8.4.20",
+    "prettier": "^2.7.1",
+    "prettier-config-custom": "workspace:*",
+    "prettier-plugin-tailwindcss": "^0.1.13",
     "tailwindcss": "^3.2.4",
     "tsconfig": "workspace:*",
     "typescript": "^4.5.3"
