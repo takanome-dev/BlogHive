@@ -6,17 +6,5 @@
     "target": "es2017",
     "module": "commonjs",
     "noEmit": false,
-    "removeComments": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
-    "outDir": "./dist",
-    "baseUrl": "./",
-    "strictNullChecks": false,
-    "noImplicitAny": false,
-    "strictBindCallApply": false,
-    "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
   }
 }

@@ -1,6 +1,6 @@
 import { type AppType } from 'next/app';
 
-import '@/styles/globals.css';
+import '@/styles/global.css';
 
 const MyApp: AppType = ({
   Component,
