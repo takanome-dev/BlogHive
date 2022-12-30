@@ -7,9 +7,9 @@ Please read the [CODE of CONDUCT](CODE_OF_CONDUCT.md).
 
 First, fork the repository to your own account and run the following command:
 
-- Clone your repo: `git clone https://github.com/<your_name>/assign-to-me-action`
-- Change directory to the working dir: `cd assign-to-me-action`
-- Install the dependencies: `npm ci`
+- Clone your repo: `git clone https://github.com/<your_github_username>/BlogHive`
+- Change directory to the working dir: `cd BlogHive`
+- Install the dependencies: `pnpm install`
 
 ## Issue
 
