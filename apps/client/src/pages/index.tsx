@@ -1,18 +1,14 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { Button } from 'ui';
-import logoTextBlack from '@/public/logo-text-black-1.png';
+
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import communityImg from '@/public/community.png';
 
 export default function IndexPage() {
   return (
     <>
-      <header className="sticky top-0 flex items-center justify-between bg-white bg-opacity-70 px-16 py-2 shadow-md backdrop-blur-md">
-        <Link href="/">
-          <Image src={logoTextBlack} width={200} height={200} alt="Logo" />
-        </Link>
-        <Button />
-      </header>
+      <Header />
       <main className="min-h-[calc(100vh-(70px))] px-16 py-8">
         <div className="hero-section flex w-full flex-col items-center justify-center border border-red-500 py-8 text-center">
           <h1 className="max-w-3xl text-5xl font-bold text-slate-900 ">
@@ -186,41 +182,7 @@ export default function IndexPage() {
           </div>
         </section>
       </main>
-      <footer className="flex justify-between border-t border-slate-4 p-16 shadow">
-        <div className="socials">
-          <Link href="/">
-            <Image src={logoTextBlack} width={200} height={200} alt="Logo" />
-          </Link>
-          <div className="socials-icons flex gap-4">
-            <div className="social h-12 w-12 bg-blue-600"></div>
-            <div className="social h-12 w-12 bg-blue-600"></div>
-            <div className="social h-12 w-12 bg-blue-600"></div>
-            <div className="social h-12 w-12 bg-blue-600"></div>
-          </div>
-          <p>Copyright © BlogHive 2022</p>
-        </div>
-        <div className="links flex gap-20">
-          <div className="link-container flex flex-col">
-            <h6>Explore</h6>
-            <Link href="/#">Feed</Link>
-            <Link href="/#">Trending Blogs</Link>
-            <Link href="/#">Tags</Link>
-            <Link href="/#">Search</Link>
-          </div>
-          <div className="link-container flex flex-col">
-            <h6>BlogHive</h6>
-            <Link href="/#">About</Link>
-            <Link href="/#">Contact</Link>
-            <Link href="/#">Terms</Link>
-            <Link href="/#">Privacy</Link>
-          </div>
-          <div className="link-container flex flex-col">
-            <h6>Support</h6>
-            <Link href="/#">Community</Link>
-            <Link href="/#">Discussion</Link>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
