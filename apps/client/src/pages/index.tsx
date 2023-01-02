@@ -14,7 +14,7 @@ export default function IndexPage() {
         <Button />
       </header>
       <main className="min-h-[calc(100vh-(70px))] px-16 py-8">
-        <div className="flex w-full flex-col items-center justify-center border border-red-500 py-8 text-center">
+        <div className="hero-section flex w-full flex-col items-center justify-center border border-red-500 py-8 text-center">
           <h1 className="max-w-3xl text-5xl font-bold text-slate-900 ">
             The <span className="text-blue-600">Open Source</span> Blogging
             Platform
@@ -25,7 +25,7 @@ export default function IndexPage() {
             others on their blogging journey.
           </p>
         </div>
-        <section className="mt-8">
+        <section className="community-section mt-8">
           <div className="flex flex-col items-center">
             <span className="rounded-lg border border-blue-600 px-2 py-1 text-blue-600">
               Community
@@ -50,6 +50,125 @@ export default function IndexPage() {
             <div>
               <Image src={communityImg} alt="Community Image" />
             </div>
+          </div>
+        </section>
+        <section className="key-features-section my-8">
+          <div className="my-4 flex justify-center">
+            <span className="rounded-lg border border-blue-600 px-2 py-1 text-blue-600">
+              Key features
+            </span>
+          </div>
+          <div className="grid grid-cols-2 gap-y-20 rounded-lg bg-slate-100 px-8 py-16 shadow">
+            <div className="flex max-w-lg gap-8 border border-red-500">
+              <div>Icon</div>
+              <div>
+                <h3 className="mb-4">Feedback and critique</h3>
+                <p>
+                  Get constructive feedback and critiques from other writers and
+                  experts in your niche to help you improve your skills and grow
+                  as a blogger.
+                </p>
+              </div>
+            </div>
+            <div className="flex  max-w-lg  gap-8">
+              <div>Icon</div>
+              <div>
+                <h3 className="mb-4">Feedback and critique</h3>
+                <p>
+                  Get constructive feedback and critiques from other writers and
+                  experts in your niche to help you improve your skills and grow
+                  as a blogger.
+                </p>
+              </div>
+            </div>
+            <div className="flex  max-w-lg  gap-8">
+              <div>Icon</div>
+              <div>
+                <h3 className="mb-4">Feedback and critique</h3>
+                <p>
+                  Get constructive feedback and critiques from other writers and
+                  experts in your niche to help you improve your skills and grow
+                  as a blogger.
+                </p>
+              </div>
+            </div>
+            <div className="flex  max-w-lg  gap-8">
+              <div>Icon</div>
+              <div>
+                <h3 className="mb-4">Feedback and critique</h3>
+                <p>
+                  Get constructive feedback and critiques from other writers and
+                  experts in your niche to help you improve your skills and grow
+                  as a blogger.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="advanced-features-section my-8">
+          <div className="my-4 flex flex-col items-center">
+            <span className="rounded-lg border border-blue-600 px-2 py-1 text-blue-600">
+              Advanced features
+            </span>
+            <p className="mt-4 max-w-lg text-center text-xl font-semibold text-slate-700">
+              Take your writing to the{' '}
+              <span className="text-blue-600">next level</span> with BlogHive's
+              advanced features
+            </p>
+          </div>
+          <div className="grid grid-cols-2 place-items-center items-start gap-y-20 px-8 py-16">
+            <div className="flex max-w-lg gap-8 border border-red-500">
+              <div>Icon</div>
+              <div>
+                <h3 className="mb-4">Writing prompts and challenges</h3>
+                <p>
+                  Practice your writing skills and explore new topics and styles
+                  with a variety of writing prompts and challenges.
+                </p>
+              </div>
+            </div>
+            <div className="flex max-w-lg gap-8 border border-red-500">
+              <div>Icon</div>
+              <div>
+                <h3 className="mb-4">Writing critiques and editing services</h3>
+                <p>
+                  Get more in-depth feedback on your work with our writing
+                  critique and editing services.
+                </p>
+              </div>
+            </div>
+            <div className="flex max-w-lg gap-8 border border-red-500">
+              <div>Icon</div>
+              <div>
+                <h3 className="mb-4">Online workshops</h3>
+                <p>
+                  Learn more about writing, blogging, and online publishing with
+                  our online courses and workshops.
+                </p>
+              </div>
+            </div>
+            <div className="flex max-w-lg gap-8 border border-red-500">
+              <div>Icon</div>
+              <div>
+                <h3 className="mb-4">Collaboration tools</h3>
+                <p>
+                  Work together with other writers and share ideas and feedback
+                  more easily with our collaboration tools.
+                </p>
+              </div>
+            </div>
+            {/* <div className="col-span-2 border border-red-500"> */}
+            <div className="col-span-2 flex max-w-lg gap-8 border border-red-500">
+              <div>Icon</div>
+              <div>
+                <h3 className="mb-4">Personalized writing plans</h3>
+                <p>
+                  Set writing goals, track your progress, and stay motivated
+                  with our personalized writing plans.
+                </p>
+              </div>
+            </div>
+            {/* </div> */}
           </div>
         </section>
       </main>
