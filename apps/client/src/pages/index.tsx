@@ -7,7 +7,7 @@ import communityImg from '@/public/community.png';
 export default function IndexPage() {
   return (
     <>
-      <header className="sticky top-0 flex items-center justify-between bg-white bg-opacity-80 px-16 py-2 shadow-md backdrop-blur-md">
+      <header className="sticky top-0 flex items-center justify-between bg-white bg-opacity-70 px-16 py-2 shadow-md backdrop-blur-md">
         <Link href="/">
           <Image src={logoTextBlack} width={200} height={200} alt="Logo" />
         </Link>
@@ -171,7 +171,56 @@ export default function IndexPage() {
             {/* </div> */}
           </div>
         </section>
+        <section className="subscribe-section flex justify-center rounded-lg bg-slate-200 p-8 shadow">
+          <div className="flex max-w-2xl flex-col items-center justify-center gap-8 p-8">
+            <h4 className="">Ready to join the BlogHive community?</h4>
+            <p className="text-center">
+              Sign up now and start improving your writing skills, connecting
+              with other writers, and taking your blogging journey to the next
+              level!
+            </p>
+            <div>
+              <input type="text" placeholder="your email address" />
+              <Button />
+            </div>
+          </div>
+        </section>
       </main>
+      <footer className="flex justify-between border-t border-slate-4 p-16 shadow">
+        <div className="socials">
+          <Link href="/">
+            <Image src={logoTextBlack} width={200} height={200} alt="Logo" />
+          </Link>
+          <div className="socials-icons flex gap-4">
+            <div className="social h-12 w-12 bg-blue-600"></div>
+            <div className="social h-12 w-12 bg-blue-600"></div>
+            <div className="social h-12 w-12 bg-blue-600"></div>
+            <div className="social h-12 w-12 bg-blue-600"></div>
+          </div>
+          <p>Copyright © BlogHive 2022</p>
+        </div>
+        <div className="links flex gap-20">
+          <div className="link-container flex flex-col">
+            <h6>Explore</h6>
+            <Link href="/#">Feed</Link>
+            <Link href="/#">Trending Blogs</Link>
+            <Link href="/#">Tags</Link>
+            <Link href="/#">Search</Link>
+          </div>
+          <div className="link-container flex flex-col">
+            <h6>BlogHive</h6>
+            <Link href="/#">About</Link>
+            <Link href="/#">Contact</Link>
+            <Link href="/#">Terms</Link>
+            <Link href="/#">Privacy</Link>
+          </div>
+          <div className="link-container flex flex-col">
+            <h6>Support</h6>
+            <Link href="/#">Community</Link>
+            <Link href="/#">Discussion</Link>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
