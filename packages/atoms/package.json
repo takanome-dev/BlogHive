@@ -1,5 +1,5 @@
 {
-  "name": "ui",
+  "name": "atoms",
   "version": "0.0.0",
   "main": "./index.tsx",
   "types": "./index.tsx",
@@ -15,5 +15,8 @@
     "react": "^18.0.0",
     "tsconfig": "workspace:*",
     "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "clsx": "^1.2.1"
   }
 }

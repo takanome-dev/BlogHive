@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Button } from 'ui';
+import { Button } from 'atoms';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -177,7 +177,7 @@ export default function IndexPage() {
             </p>
             <div>
               <input type="text" placeholder="your email address" />
-              <Button />
+              <Button>Subscribe</Button>
             </div>
           </div>
         </section>

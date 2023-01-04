@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { Button } from 'ui';
+import { Button } from 'atoms';
 
 import logoTextBlack from '@/public/logo-text-black-1.png';
 
@@ -11,7 +11,7 @@ const Header = () => {
       <Link href="/">
         <Image src={logoTextBlack} width={200} height={200} alt="Logo" />
       </Link>
-      <Button />
+      <Button>Sign in</Button>
     </header>
   );
 };
