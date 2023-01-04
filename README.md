@@ -1,6 +1,6 @@
 <div align="center">
   <br>
-  <img alt="BlogHive" src="./apps/client/public/logo-text-black-1.png" width="300px">
+  <img alt="BlogHive" src="./apps/client/public/logo-text-white.png" width="300px">
   <h2>Where Bloggers Grow Together</h2>
   <strong>A community-driven platform for bloggers to improve their skills and connect with like-minded individuals</strong>
 </div>
@@ -37,10 +37,11 @@ not yet functional but is being actively developed. Please "watch" the project a
 │   │   ├── postcss.config.js
 │   │   ├── public
 │   │   │   ├── community.png
-│   │   │   ├── logo-text-black-1.png
+│   │   │   ├── icon-blue.png
+│   │   │   ├── icon-white.png
 │   │   │   ├── logo-text-black.png
-│   │   │   ├── logo-text-blue-1.png
-│   │   │   └── logo-text-blue.png
+│   │   │   ├── logo-text-blue.png
+│   │   │   └── logo-text-white.png
 │   │   ├── README.md
 │   │   ├── src
 │   │   │   ├── components
