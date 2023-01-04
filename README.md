@@ -5,9 +5,7 @@
   <strong>A community-driven platform for bloggers to improve their skills and connect with like-minded individuals</strong>
 </div>
 
----
-
-## :construction: Status :construction
+## :construction: Status :construction:
 
 BlogHive is currently _early_ in the development cycle. This app is
 not yet functional but is being actively developed. Please "watch" the project and leave a star and help us build this platform.
@@ -19,8 +17,6 @@ not yet functional but is being actively developed. Please "watch" the project a
 - Community chat: Enable users to connect and communicate with each other through a community chat feature.
 - Blogging resources: Offer a library of resources for bloggers, such as tips on writing, editing, and publishing.
 - Blogging goals: Allow users to set and track their blogging goals, and offer support and encouragement to help them achieve their objectives.
-
----
 
 <details>
   <summary><h2 style="display:inline;"> Project Structure</h2></summary>
@@ -100,8 +96,6 @@ not yet functional but is being actively developed. Please "watch" the project a
 ```
 
 </details>
-
----
 
 ## :desktop_computer: Local development
 
