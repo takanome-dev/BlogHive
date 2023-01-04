@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-import logoTextBlack from '@/public/logo-text-black-1.png';
+import logoTextBlack from '@/public/logo-text-black.png';
 
 const Footer = () => {
   return (
