@@ -7,10 +7,7 @@
 
 ---
 
-## :vertical_traffic_light: Status
-
-🚧 **In Development** 🚧
-
+## :construction: Status :construction:
 BlogHive is currently _early_ in the development cycle. This app is
 not yet functional but is being actively developed. Please "watch" the project and leave a star and help us build this platform.
 
