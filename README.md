@@ -5,7 +5,7 @@
   <strong>A community-driven platform for bloggers to improve their skills and connect with like-minded individuals</strong>
 </div>
 
-## :construction: Status :construction
+## :construction: Status
 
 BlogHive is currently _early_ in the development cycle. This app is
 not yet functional but is being actively developed. Please "watch" the project and leave a star and help us build this platform.
