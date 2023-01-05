@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import { Button } from 'atoms';
 
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Header from '@/components/molecules/Header';
+import Footer from '@/components/molecules/Footer';
 import communityImg from '@/public/community.png';
+import { Button } from '@/components/atoms/Button';
 
 export default function IndexPage() {
   return (

@@ -5,7 +5,7 @@
   <strong>A community-driven platform for bloggers to improve their skills and connect with like-minded individuals</strong>
 </div>
 
-## :construction: Status :construction:
+## :construction: Status :construction
 
 BlogHive is currently _early_ in the development cycle. This app is
 not yet functional but is being actively developed. Please "watch" the project and leave a star and help us build this platform.
@@ -39,8 +39,12 @@ not yet functional but is being actively developed. Please "watch" the project a
 │   │   ├── README.md
 │   │   ├── src
 │   │   │   ├── components
-│   │   │   │   ├── Footer.tsx
-│   │   │   │   └── Header.tsx
+│   │   │   │   ├── atoms
+│   │   │   │   │   └─── ...
+│   │   │   │   ├── molecules
+│   │   │   │   │   └─── ...
+│   │   │   │   └── organisms
+│   │   │   │       └─── ...
 │   │   │   ├── pages
 │   │   │   │   ├── _app.tsx
 │   │   │   │   └── index.tsx
@@ -69,11 +73,6 @@ not yet functional but is being actively developed. Please "watch" the project a
 ├── LICENSE
 ├── package.json
 ├── packages
-│   ├── atoms
-│   │   ├── Button.tsx
-│   │   ├── index.tsx
-│   │   ├── package.json
-│   │   └── tsconfig.json
 │   ├── eslint-config-custom
 │   │   ├── eslint-next.js
 │   │   ├── eslint-server.js

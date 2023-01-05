@@ -1,7 +1,8 @@
-import { Button } from 'atoms';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+
+import { Button } from '@/components/atoms/Button';
 
 import logoTextBlack from '@/public/logo-text-black.png';
 
@@ -10,7 +11,7 @@ const Header = () => (
     <Link href="/">
       <Image src={logoTextBlack} width={200} height={200} alt="Logo" />
     </Link>
-    <Button>Sign in</Button>
+    <Button color='primary'>Join now</Button>
   </header>
 );
 
