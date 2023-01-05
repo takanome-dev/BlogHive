@@ -1,11 +1,12 @@
-name: Bug report
+name: 🐛 Bug report
 description: Create a report to help us address an error.
-title: '[BUG] - <bug description>'
-labels: ['🚦 status: awaiting triage']
+title: 'Bug: '
+labels: [🐛 bug, 👀 awaiting triage]
 body:
   - type: markdown
     attributes:
-      value: '# Bug report'
+      value: |
+      Thanks for taking the time to fill out this bug report!
   - type: textarea
     id: bug_description
     attributes:
@@ -41,7 +42,7 @@ body:
     id: terms
     attributes:
       label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/TAKANOME-DEV/click-to-buy/blob/master/CODE_OF_CONDUCT.md)
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/TAKANOME-DEV/BlogHive/blob/main/CODE_OF_CONDUCT.md)
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
