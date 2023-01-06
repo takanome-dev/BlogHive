@@ -21,21 +21,21 @@ const Footer = () => {
       </div>
       <div className="links flex gap-20">
         <div className="link-container flex flex-col gap-3">
-          <h6 className="text-slate-400 font-bold text-[22px]">Explore</h6>
+          <h6 className="text-slate-400 font-bold text-xl">Explore</h6>
           <Link href="/#" className='text-lg'>Feed</Link>
           <Link href="/#" className='text-lg'>Trending Blogs</Link>
           <Link href="/#" className='text-lg'>Tags</Link>
           <Link href="/#" className='text-lg'>Search</Link>
         </div>
         <div className="link-container flex flex-col gap-3">
-          <h6 className="text-slate-400 font-bold text-[22px]">BlogHive</h6>
+          <h6 className="text-slate-400 font-bold text-xl">BlogHive</h6>
           <Link href="/#" className='text-lg'>About</Link>
           <Link href="/#" className='text-lg'>Contact</Link>
           <Link href="/#" className='text-lg'>Terms</Link>
           <Link href="/#" className='text-lg'>Privacy</Link>
         </div>
         <div className="link-container flex flex-col gap-3">
-          <h6 className="text-slate-400 font-bold text-[22px]">Support</h6>
+          <h6 className="text-slate-400 font-bold text-xl">Support</h6>
           <Link href="/#" className='text-lg'>Community</Link>
           <Link href="/#" className='text-lg'>Discussion</Link>
         </div>
