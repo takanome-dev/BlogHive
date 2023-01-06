@@ -21,21 +21,21 @@ const Footer = () => {
       </div>
       <div className="links flex gap-20">
         <div className="link-container flex flex-col gap-3">
-          <h6 className="text-[#075985] font-bold text-[22px]">Explore</h6>
-          <Link href="/#" className='text-[18px]'>Feed</Link>
-          <Link href="/#" className='text-[18px]'>Trending Blogs</Link>
-          <Link href="/#" className='text-[18px]'>Tags</Link>
-          <Link href="/#" className='text-[18px]'>Search</Link>
+          <h6 className="text-slate-400 font-bold text-[22px]">Explore</h6>
+          <Link href="/#" className='text-lg'>Feed</Link>
+          <Link href="/#" className='text-lg'>Trending Blogs</Link>
+          <Link href="/#" className='text-lg'>Tags</Link>
+          <Link href="/#" className='text-lg'>Search</Link>
         </div>
         <div className="link-container flex flex-col gap-3">
-          <h6 className="text-[#075985] font-bold text-[22px]">BlogHive</h6>
-          <Link href="/#" className='text-[18px]'>About</Link>
-          <Link href="/#" className='text-[18px]'>Contact</Link>
-          <Link href="/#" className='text-[18px]'>Terms</Link>
-          <Link href="/#" className='text-[18px]'>Privacy</Link>
+          <h6 className="text-slate-400 font-bold text-[22px]">BlogHive</h6>
+          <Link href="/#" className='text-lg'>About</Link>
+          <Link href="/#" className='text-lg'>Contact</Link>
+          <Link href="/#" className='text-lg'>Terms</Link>
+          <Link href="/#" className='text-lg'>Privacy</Link>
         </div>
         <div className="link-container flex flex-col gap-3">
-          <h6 className="text-[#075985] font-bold text-[22px]">Support</h6>
+          <h6 className="text-slate-400 font-bold text-[22px]">Support</h6>
           <Link href="/#" className='text-[18px]'>Community</Link>
           <Link href="/#" className='text-[18px]'>Discussion</Link>
         </div>
