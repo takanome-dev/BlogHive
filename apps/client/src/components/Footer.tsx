@@ -20,24 +20,24 @@ const Footer = () => {
         <p>Copyright © BlogHive 2022</p>
       </div>
       <div className="links flex gap-20">
-        <div className="link-container flex flex-col">
-          <h6>Explore</h6>
-          <Link href="/#">Feed</Link>
-          <Link href="/#">Trending Blogs</Link>
-          <Link href="/#">Tags</Link>
-          <Link href="/#">Search</Link>
+        <div className="link-container flex flex-col gap-3">
+          <h6 className="text-[#075985] font-bold text-[22px]">Explore</h6>
+          <Link href="/#" className='text-[18px]'>Feed</Link>
+          <Link href="/#" className='text-[18px]'>Trending Blogs</Link>
+          <Link href="/#" className='text-[18px]'>Tags</Link>
+          <Link href="/#" className='text-[18px]'>Search</Link>
         </div>
-        <div className="link-container flex flex-col">
-          <h6>BlogHive</h6>
-          <Link href="/#">About</Link>
-          <Link href="/#">Contact</Link>
-          <Link href="/#">Terms</Link>
-          <Link href="/#">Privacy</Link>
+        <div className="link-container flex flex-col gap-3">
+          <h6 className="text-[#075985] font-bold text-[22px]">BlogHive</h6>
+          <Link href="/#" className='text-[18px]'>About</Link>
+          <Link href="/#" className='text-[18px]'>Contact</Link>
+          <Link href="/#" className='text-[18px]'>Terms</Link>
+          <Link href="/#" className='text-[18px]'>Privacy</Link>
         </div>
-        <div className="link-container flex flex-col">
-          <h6>Support</h6>
-          <Link href="/#">Community</Link>
-          <Link href="/#">Discussion</Link>
+        <div className="link-container flex flex-col gap-3">
+          <h6 className="text-[#075985] font-bold text-[22px]">Support</h6>
+          <Link href="/#" className='text-[18px]'>Community</Link>
+          <Link href="/#" className='text-[18px]'>Discussion</Link>
         </div>
       </div>
     </footer>
