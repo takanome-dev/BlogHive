@@ -36,8 +36,8 @@ const Footer = () => {
         </div>
         <div className="link-container flex flex-col gap-3">
           <h6 className="text-slate-400 font-bold text-[22px]">Support</h6>
-          <Link href="/#" className='text-[18px]'>Community</Link>
-          <Link href="/#" className='text-[18px]'>Discussion</Link>
+          <Link href="/#" className='text-lg'>Community</Link>
+          <Link href="/#" className='text-lg'>Discussion</Link>
         </div>
       </div>
     </footer>
