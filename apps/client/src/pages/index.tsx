@@ -183,9 +183,9 @@ export default function IndexPage() {
           </div>
         </section>
         <section className="subscribe-section flex justify-center rounded-xl bg-slate-300 p-8 shadow">
-          <div className="flex max-w-3xl flex-col items-center justify-center gap-8 p-8">
-            <h4 className="text-3xl font-bold text-slate-800">Ready to join the BlogHive community?</h4>
-            <p className="text-center text-slate-900 text-md px-5">
+          <div className="flex max-w-3xl flex-col items-center justify-center gap-8 p-2 lg:p-8 xl:p-8">
+            <h4 className="lg:text-3xl xl:text-3xl text-xl md:text-2xl font-bold text-center text-slate-800">Ready to join the BlogHive community?</h4>
+            <p className="text-center text-slate-900 text-md px-2 lg:px-5 xl:px-5">
               Sign up now and start improving your writing skills, connecting
               with other writers, and taking your blogging journey to the next
               level!
