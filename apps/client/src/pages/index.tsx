@@ -16,9 +16,9 @@ export default function IndexPage() {
   return (
     <>
       <Header />
-      <main className="min-h-[calc(100vh-(70px))] px-16 py-8">
-        <div className="hero-section flex w-full flex-col items-center justify-center border border-red-500 py-8 text-center">
-          <h1 className="max-w-3xl text-5xl font-bold text-slate-900 ">
+      <main className="min-h-[calc(100vh-(70px))] px-5 lg:px-16 py-8">
+        <div className="hero-section flex w-full flex-col items-center justify-center py-8 text-center">
+          <h1 className="max-w-3xl text-3xl md:text-5xl _2md:text-5xl lg:text-5xl font-bold text-slate-900 ">
             The <span className="text-blue-600">Open Source</span> Blogging
             Platform
           </h1>
@@ -33,12 +33,12 @@ export default function IndexPage() {
             <span className="rounded-lg border border-blue-600 px-2 py-1 text-blue-600">
               Community
             </span>
-            <p className="mt-4 max-w-lg text-xl font-semibold text-slate-700">
+            <p className="mt-4 max-w-lg text-center text-xl font-semibold text-slate-700">
               BlogHive is more than just a platform for writers and bloggers -
               it's a <span className="text-blue-600">community</span>
             </p>
           </div>
-          <div className="mt-8 grid grid-cols-2 gap-12">
+          <div className="mt-8 grid grid-cols-1 justify-items-center lg:justify-items-start lg:grid-cols-2 gap-12">
             <div className="flex max-w-xl flex-col justify-center gap-8 text-slate-600">
               <p>
                 With BlogHive, you can share your work, get feedback, and
@@ -61,7 +61,7 @@ export default function IndexPage() {
               Key features
             </span>
           </div>
-          <div className="grid grid-cols-2 gap-y-20 rounded-lg bg-card px-20 py-16 shadow">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-y-20 rounded-lg bg-card px-10 lg:px-20 xl:px-20 py-16 shadow">
             <div className="flex max-w-lg gap-8">
               <div>
                 <Image src={feedback} alt="feeback" className='w-[40px]'/>
@@ -190,7 +190,7 @@ export default function IndexPage() {
               with other writers, and taking your blogging journey to the next
               level!
             </p>
-                <div className='w-full flex lg:flex-row md:flex-row flex-col lg:justify-center justify-center items-center'>
+                <div className='w-full flex lg:flex-row flex-col lg:justify-center justify-center items-center'>
                   <input type="text"
                         className='lg:w-[60%] h-[3rem] rounded-lg outline-none bg-slate-100 pl-4 w-[80%]'
                         required 
