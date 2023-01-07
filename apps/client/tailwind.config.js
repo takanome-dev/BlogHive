@@ -16,6 +16,9 @@ module.exports = {
           9: '#0B142A',
         },
       },
+      backgroundImage: {
+        card: 'linear-gradient(115.8deg, #0061FF -21.78%, #60EFFF 99.47%)',
+      },
     },
   },
   plugins: [],

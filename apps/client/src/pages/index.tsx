@@ -1,5 +1,12 @@
 import Image from 'next/image';
-import { Button } from 'atoms';
+// import { Button } from 'atoms';
+
+import {
+    feedback,
+    collaboration,
+    learning,
+    community,
+} from "../assets/index"
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -54,11 +61,13 @@ export default function IndexPage() {
               Key features
             </span>
           </div>
-          <div className="grid grid-cols-2 gap-y-20 rounded-lg bg-slate-100 px-8 py-16 shadow">
-            <div className="flex max-w-lg gap-8 border border-red-500">
-              <div>Icon</div>
+          <div className="grid grid-cols-2 gap-y-20 rounded-lg bg-card px-20 py-16 shadow">
+            <div className="flex max-w-lg gap-8">
               <div>
-                <h3 className="mb-4">Feedback and critique</h3>
+                <Image src={feedback} alt="feeback" className='w-[40px]'/>
+              </div>
+              <div>
+                <h3 className="mb-4 text-slate-100 text-xl font-bold capitalize">Feedback and critique</h3>
                 <p>
                   Get constructive feedback and critiques from other writers and
                   experts in your niche to help you improve your skills and grow
@@ -67,9 +76,11 @@ export default function IndexPage() {
               </div>
             </div>
             <div className="flex  max-w-lg  gap-8">
-              <div>Icon</div>
               <div>
-                <h3 className="mb-4">Feedback and critique</h3>
+                <Image src={collaboration} alt="feeback" className='w-[40px]'/>
+              </div>
+              <div>
+                <h3 className="mb-4 text-slate-100 text-xl font-bold capitalize">Feedback and critique</h3>
                 <p>
                   Get constructive feedback and critiques from other writers and
                   experts in your niche to help you improve your skills and grow
@@ -78,9 +89,11 @@ export default function IndexPage() {
               </div>
             </div>
             <div className="flex  max-w-lg  gap-8">
-              <div>Icon</div>
               <div>
-                <h3 className="mb-4">Feedback and critique</h3>
+                <Image src={learning} alt="feeback" className='w-[40px]'/>
+              </div>
+              <div>
+                <h3 className="mb-4 text-slate-100 text-xl font-bold capitalize">Feedback and critique</h3>
                 <p>
                   Get constructive feedback and critiques from other writers and
                   experts in your niche to help you improve your skills and grow
@@ -88,10 +101,12 @@ export default function IndexPage() {
                 </p>
               </div>
             </div>
-            <div className="flex  max-w-lg  gap-8">
-              <div>Icon</div>
+            <div className="flex max-w-lg  gap-8">
               <div>
-                <h3 className="mb-4">Feedback and critique</h3>
+                <Image src={community} alt="feeback" className='w-[40px]'/>
+              </div>
+              <div>
+                <h3 className="mb-4 text-slate-100 text-xl font-bold capitalize">Feedback and critique</h3>
                 <p>
                   Get constructive feedback and critiques from other writers and
                   experts in your niche to help you improve your skills and grow
