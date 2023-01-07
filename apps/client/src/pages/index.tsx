@@ -5,6 +5,13 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import communityImg from '@/public/community.png';
 
+// advanced features section icons
+import autographIcon from '@/public/icon-autograph.png'
+import computerChatIcon from '@/public/icon-computerChat.png'
+import goalIcon from '@/public/icon-goal.png'
+import handWithPenIcon from '@/public/icon-handWithPen.png'
+import photoCameraFrontIcon from '@/public/icon-photoCameraFront.png'
+
 export default function IndexPage() {
   return (
     <>
@@ -110,43 +117,51 @@ export default function IndexPage() {
               Take your writing to the{' '}
               <span className="text-blue-600">next level</span> with BlogHive's
               advanced features
-            </p>
+            </p>  
           </div>
           <div className="grid grid-cols-2 place-items-center items-start gap-y-20 px-8 py-16">
-            <div className="flex max-w-lg gap-8 border border-red-500">
-              <div>Icon</div>
+            <div className="flex max-w-lg gap-8">
+              <div className="flex bg-slate-1 w-[110px] h-[60px] items-center justify-around rounded">
+                <Image src={handWithPenIcon} alt="Hand With Pen Icon" />
+              </div>
               <div>
-                <h3 className="mb-4">Writing prompts and challenges</h3>
-                <p>
+                <h3 className="mb-4 not-italic font-semibold text-2xl">Writing prompts and challenges</h3>
+                <p className="not-italic font-normal text-base">
                   Practice your writing skills and explore new topics and styles
                   with a variety of writing prompts and challenges.
                 </p>
               </div>
             </div>
-            <div className="flex max-w-lg gap-8 border border-red-500">
-              <div>Icon</div>
+            <div className="flex max-w-lg gap-8">
+              <div className="flex bg-slate-1 w-[110px] h-[60px] items-center justify-around rounded">
+                <Image src={autographIcon} alt="Autpograph Icon" />
+              </div>
               <div>
-                <h3 className="mb-4">Writing critiques and editing services</h3>
+                <h3 className="mb-4 not-italic font-semibold text-2xl">Writing critiques and editing services</h3>
                 <p>
                   Get more in-depth feedback on your work with our writing
                   critique and editing services.
                 </p>
               </div>
             </div>
-            <div className="flex max-w-lg gap-8 border border-red-500">
-              <div>Icon</div>
+            <div className="flex max-w-lg gap-8">
+              <div className="flex bg-slate-1 w-[110px] h-[60px] items-center justify-around rounded">
+                <Image src={photoCameraFrontIcon} alt="Photo Camera Front Icon" />
+              </div>
               <div>
-                <h3 className="mb-4">Online workshops</h3>
+                <h3 className="mb-4 not-italic font-semibold text-2xl">Online workshops</h3>
                 <p>
                   Learn more about writing, blogging, and online publishing with
                   our online courses and workshops.
                 </p>
               </div>
             </div>
-            <div className="flex max-w-lg gap-8 border border-red-500">
-              <div>Icon</div>
+            <div className="flex max-w-lg gap-8">
+              <div className="flex bg-slate-1 w-[110px] h-[60px] items-center justify-around rounded">
+                <Image src={computerChatIcon} alt="Computer Chat   Icon" />
+              </div>
               <div>
-                <h3 className="mb-4">Collaboration tools</h3>
+                <h3 className="mb-4 not-italic font-semibold text-2xl">Collaboration tools</h3>
                 <p>
                   Work together with other writers and share ideas and feedback
                   more easily with our collaboration tools.
@@ -154,10 +169,12 @@ export default function IndexPage() {
               </div>
             </div>
             {/* <div className="col-span-2 border border-red-500"> */}
-            <div className="col-span-2 flex max-w-lg gap-8 border border-red-500">
-              <div>Icon</div>
+            <div className="col-span-2 flex max-w-lg gap-8">
+              <div className="flex bg-slate-1 w-[110px] h-[60px] items-center justify-around rounded">
+                <Image src={goalIcon} alt="Goal Icon" />
+              </div>
               <div>
-                <h3 className="mb-4">Personalized writing plans</h3>
+                <h3 className="mb-4 not-italic font-semibold text-2xl">Personalized writing plans</h3>
                 <p>
                   Set writing goals, track your progress, and stay motivated
                   with our personalized writing plans.
@@ -167,24 +184,18 @@ export default function IndexPage() {
             {/* </div> */}
           </div>
         </section>
-        <section className="subscribe-section flex justify-center rounded-xl bg-slate-300 p-8 shadow">
-          <div className="flex max-w-3xl flex-col items-center justify-center gap-8 p-8">
-            <h4 className="text-3xl font-bold text-slate-800">Ready to join the BlogHive community?</h4>
-            <p className="text-center text-slate-900 text-md px-5">
+        <section className="subscribe-section flex justify-center rounded-lg bg-slate-200 p-8 shadow">
+          <div className="flex max-w-2xl flex-col items-center justify-center gap-8 p-8">
+            <h4 className="">Ready to join the BlogHive community?</h4>
+            <p className="text-center">
               Sign up now and start improving your writing skills, connecting
               with other writers, and taking your blogging journey to the next
               level!
             </p>
-                <div className='w-full flex lg:flex-row md:flex-row flex-col lg:justify-center justify-center items-center'>
-                  <input type="text"
-                        className='lg:w-[60%] h-[3rem] rounded-lg outline-none bg-slate-100 pl-4 w-[80%]'
-                        required 
-                        placeholder="your email address"
-                  />
-                  <div className="flex justify-center items-center">
-                    <button className='bg-slate-900 lg:mt-0 mt-[1.5rem] text-slate-100 lg:relative lg:right-[7.5rem] placeholder:text-[#fff] py-2 px-5 font-bold rounded-lg z-50' type="submit">Subscribe</button>  
-                  </div>
-                </div> 
+            <div>
+              <input type="text" placeholder="your email address" />
+              <Button>Subscribe</Button>
+            </div>
           </div>
         </section>
       </main>
