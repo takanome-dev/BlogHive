@@ -175,10 +175,16 @@ export default function IndexPage() {
               with other writers, and taking your blogging journey to the next
               level!
             </p>
-            <div>
-              <input type="text" placeholder="your email address" />
-              <Button>Subscribe</Button>
-            </div>
+                <div className='w-full flex lg:flex-row md:flex-row flex-col lg:justify-center justify-center items-center'>
+                  <input type="text"
+                        className='lg:w-[60%] h-[3rem] rounded-lg outline-none bg-slate-100 pl-4 w-[80%]'
+                        required 
+                        placeholder="your email address"
+                  />
+                  <div className="flex justify-center items-center">
+                    <button className='bg-slate-900 lg:mt-0 mt-[1.5rem] text-slate-100 lg:relative lg:right-[7.5rem] placeholder:text-[#fff] py-2 px-5 font-bold rounded-lg z-50' type="submit">Subscribe</button>  
+                  </div>
+                </div> 
           </div>
         </section>
       </main>
