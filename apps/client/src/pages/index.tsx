@@ -6,7 +6,7 @@ import {
     collaboration,
     learning,
     community,
-} from "../assets/index"
+} from "@/assets/index"
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -64,10 +64,10 @@ export default function IndexPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-y-20 rounded-lg bg-card px-10 lg:px-20 xl:px-20 py-16 shadow">
             <div className="flex max-w-lg gap-8">
               <div>
-                <Image src={feedback} alt="feeback" className='w-[40px]'/>
+                <Image src={feedback} alt="feedback and critique" width={120} height={120}/>
               </div>
               <div>
-                <h3 className="mb-4 text-slate-100 text-xl font-bold capitalize">Feedback and critique</h3>
+                <h3 className="mb-4 text-slate-900 text-xl font-bold capitalize">Feedback and critique</h3>
                 <p>
                   Get constructive feedback and critiques from other writers and
                   experts in your niche to help you improve your skills and grow
@@ -77,40 +77,34 @@ export default function IndexPage() {
             </div>
             <div className="flex  max-w-lg  gap-8">
               <div>
-                <Image src={collaboration} alt="feeback" className='w-[40px]'/>
+                <Image src={collaboration} alt="Collaboration and support" width={120} height={120}/>
               </div>
               <div>
-                <h3 className="mb-4 text-slate-100 text-xl font-bold capitalize">Feedback and critique</h3>
+                <h3 className="mb-4 text-slate-900 text-xl font-bold capitalize">Collaboration and support</h3>
                 <p>
-                  Get constructive feedback and critiques from other writers and
-                  experts in your niche to help you improve your skills and grow
-                  as a blogger.
+                  Connect with other writers and bloggers to share ideas, offer support, and collaborate on projects.
                 </p>
               </div>
             </div>
             <div className="flex  max-w-lg  gap-8">
               <div>
-                <Image src={learning} alt="feeback" className='w-[40px]'/>
+                <Image src={learning} alt="Learning resources" width={120} height={120}/>
               </div>
               <div>
-                <h3 className="mb-4 text-slate-100 text-xl font-bold capitalize">Feedback and critique</h3>
+                <h3 className="mb-4 text-slate-900 text-xl font-bold capitalize">Learning resources</h3>
                 <p>
-                  Get constructive feedback and critiques from other writers and
-                  experts in your niche to help you improve your skills and grow
-                  as a blogger.
+                  Access a wide range of resources and guides to help you learn more about blogging, writing, and online publishing.
                 </p>
               </div>
             </div>
             <div className="flex max-w-lg  gap-8">
               <div>
-                <Image src={community} alt="feeback" className='w-[40px]'/>
+                <Image src={community} alt="community forums" width={120} height={120} />
               </div>
               <div>
-                <h3 className="mb-4 text-slate-100 text-xl font-bold capitalize">Feedback and critique</h3>
+                <h3 className="mb-4 text-slate-900 text-xl font-bold capitalize">Community forums</h3>
                 <p>
-                  Get constructive feedback and critiques from other writers and
-                  experts in your niche to help you improve your skills and grow
-                  as a blogger.
+                   Participate in forums and discussion groups to connect with other writers and bloggers, share your work, and get feedback.
                 </p>
               </div>
             </div>
