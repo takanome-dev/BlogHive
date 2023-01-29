@@ -1,5 +1,12 @@
 import Image from 'next/image';
-import { Button } from 'atoms';
+// import { Button } from 'atoms';
+
+import {
+    feedback,
+    collaboration,
+    learning,
+    community,
+} from "@/assets/index"
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -9,9 +16,9 @@ export default function IndexPage() {
   return (
     <>
       <Header />
-      <main className="min-h-[calc(100vh-(70px))] px-16 py-8">
-        <div className="hero-section flex w-full flex-col items-center justify-center border border-red-500 py-8 text-center">
-          <h1 className="max-w-3xl text-5xl font-bold text-slate-900 ">
+      <main className="min-h-[calc(100vh-(70px))] px-5 lg:px-16 py-8">
+        <div className="hero-section flex w-full flex-col items-center justify-center py-8 text-center">
+          <h1 className="max-w-3xl text-3xl md:text-5xl _2md:text-5xl lg:text-5xl font-bold text-slate-900 ">
             The <span className="text-blue-600">Open Source</span> Blogging
             Platform
           </h1>
@@ -26,12 +33,12 @@ export default function IndexPage() {
             <span className="rounded-lg border border-blue-600 px-2 py-1 text-blue-600">
               Community
             </span>
-            <p className="mt-4 max-w-lg text-xl font-semibold text-slate-700">
+            <p className="mt-4 max-w-lg text-center text-xl font-semibold text-slate-700">
               BlogHive is more than just a platform for writers and bloggers -
               it's a <span className="text-blue-600">community</span>
             </p>
           </div>
-          <div className="mt-8 grid grid-cols-2 gap-12">
+          <div className="mt-8 grid grid-cols-1 justify-items-center lg:justify-items-start lg:grid-cols-2 gap-12">
             <div className="flex max-w-xl flex-col justify-center gap-8 text-slate-600">
               <p>
                 With BlogHive, you can share your work, get feedback, and
@@ -54,11 +61,13 @@ export default function IndexPage() {
               Key features
             </span>
           </div>
-          <div className="grid grid-cols-2 gap-y-20 rounded-lg bg-slate-100 px-8 py-16 shadow">
-            <div className="flex max-w-lg gap-8 border border-red-500">
-              <div>Icon</div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-y-20 rounded-lg bg-card px-10 lg:px-20 xl:px-20 py-16 shadow">
+            <div className="flex max-w-lg gap-8">
               <div>
-                <h3 className="mb-4">Feedback and critique</h3>
+                <Image src={feedback} alt="feedback and critique" width={120} height={120}/>
+              </div>
+              <div>
+                <h3 className="mb-4 text-slate-900 text-xl font-bold capitalize">Feedback and critique</h3>
                 <p>
                   Get constructive feedback and critiques from other writers and
                   experts in your niche to help you improve your skills and grow
@@ -67,35 +76,35 @@ export default function IndexPage() {
               </div>
             </div>
             <div className="flex  max-w-lg  gap-8">
-              <div>Icon</div>
               <div>
-                <h3 className="mb-4">Feedback and critique</h3>
+                <Image src={collaboration} alt="Collaboration and support" width={120} height={120}/>
+              </div>
+              <div>
+                <h3 className="mb-4 text-slate-900 text-xl font-bold capitalize">Collaboration and support</h3>
                 <p>
-                  Get constructive feedback and critiques from other writers and
-                  experts in your niche to help you improve your skills and grow
-                  as a blogger.
+                  Connect with other writers and bloggers to share ideas, offer support, and collaborate on projects.
                 </p>
               </div>
             </div>
             <div className="flex  max-w-lg  gap-8">
-              <div>Icon</div>
               <div>
-                <h3 className="mb-4">Feedback and critique</h3>
+                <Image src={learning} alt="Learning resources" width={120} height={120}/>
+              </div>
+              <div>
+                <h3 className="mb-4 text-slate-900 text-xl font-bold capitalize">Learning resources</h3>
                 <p>
-                  Get constructive feedback and critiques from other writers and
-                  experts in your niche to help you improve your skills and grow
-                  as a blogger.
+                  Access a wide range of resources and guides to help you learn more about blogging, writing, and online publishing.
                 </p>
               </div>
             </div>
-            <div className="flex  max-w-lg  gap-8">
-              <div>Icon</div>
+            <div className="flex max-w-lg  gap-8">
               <div>
-                <h3 className="mb-4">Feedback and critique</h3>
+                <Image src={community} alt="community forums" width={120} height={120} />
+              </div>
+              <div>
+                <h3 className="mb-4 text-slate-900 text-xl font-bold capitalize">Community forums</h3>
                 <p>
-                  Get constructive feedback and critiques from other writers and
-                  experts in your niche to help you improve your skills and grow
-                  as a blogger.
+                   Participate in forums and discussion groups to connect with other writers and bloggers, share your work, and get feedback.
                 </p>
               </div>
             </div>
@@ -168,14 +177,14 @@ export default function IndexPage() {
           </div>
         </section>
         <section className="subscribe-section flex justify-center rounded-xl bg-slate-300 p-8 shadow">
-          <div className="flex max-w-3xl flex-col items-center justify-center gap-8 p-8">
-            <h4 className="text-3xl font-bold text-slate-800">Ready to join the BlogHive community?</h4>
-            <p className="text-center text-slate-900 text-md px-5">
+          <div className="flex max-w-3xl flex-col items-center justify-center gap-8 p-2 lg:p-8 xl:p-8">
+            <h4 className="lg:text-3xl xl:text-3xl text-xl md:text-2xl font-bold text-center text-slate-800">Ready to join the BlogHive community?</h4>
+            <p className="text-center text-slate-900 text-md px-2 lg:px-5 xl:px-5">
               Sign up now and start improving your writing skills, connecting
               with other writers, and taking your blogging journey to the next
               level!
             </p>
-                <div className='w-full flex lg:flex-row md:flex-row flex-col lg:justify-center justify-center items-center'>
+                <div className='w-full flex lg:flex-row flex-col lg:justify-center justify-center items-center'>
                   <input type="text"
                         className='lg:w-[60%] h-[3rem] rounded-lg outline-none bg-slate-100 pl-4 w-[80%]'
                         required 
