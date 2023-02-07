@@ -1,5 +1,3 @@
-const withTM = require("next-transpile-modules")(["atoms"]);
-
-module.exports = withTM({
+module.exports = {
   reactStrictMode: true,
-});
+};

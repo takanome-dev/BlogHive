@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 import { feedback, collaboration, learning, community } from '@/assets/index';
 
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Header from '@/components/header';
+import Footer from '@/components/footer';
 import communityImg from '@/public/community.png';
 
 // advanced features section icons
@@ -13,47 +13,46 @@ import computerChatIcon from '@/public/icon-computerChat.png';
 import goalIcon from '@/public/icon-goal.png';
 import handWithPenIcon from '@/public/icon-handWithPen.png';
 import photoCameraFrontIcon from '@/public/icon-photoCameraFront.png';
+import { Label } from '@/components/ui/label';
 
 export default function IndexPage() {
   return (
     <>
       <Header />
-      <main className="min-h-[calc(100vh-(70px))] px-5 py-8 lg:px-16">
-        <div className="hero-section flex w-full flex-col items-center justify-center py-8 text-center">
-          <h1 className="max-w-3xl text-3xl font-bold text-slate-900 md:text-5xl _2md:text-5xl lg:text-5xl ">
+      <main className="container mx-auto min-h-[calc(100vh-(70px))] py-8">
+        <div className="flex w-full flex-col items-center justify-center py-8 text-center">
+          <h1 className="max-w-3xl text-3xl font-bold text-slate-900 md:text-5xl">
             The <span className="text-blue-600">Open Source</span> Blogging
             Platform
           </h1>
-          <p className="text-md mt-8 max-w-2xl text-slate-500">
+          <p className="text-lg mt-8 max-w-2xl text-slate-700">
             BlogHive is a platform designed specifically for writers and
             bloggers to share their work, receive feedback, and collaborate with
             others on their blogging journey.
           </p>
         </div>
-        <section className="community-section mt-8">
+        <section className="mt-8">
           <div className="flex flex-col items-center">
-            <span className="rounded-lg border border-blue-600 px-2 py-1 text-blue-600">
-              Community
-            </span>
-            <p className="mt-4 max-w-lg text-center text-xl font-semibold text-slate-700">
+            <Label name='Community' />
+            <p className="mt-4 max-w-lg text-center text-xl font-semibold text-slate-800">
               BlogHive is more than just a platform for writers and bloggers -
               it's a <span className="text-blue-600">community</span>
             </p>
           </div>
-          <div className="mt-8 grid grid-cols-1 justify-items-center gap-12 lg:grid-cols-2 lg:justify-items-start">
-            <div className="flex max-w-xl flex-col justify-center gap-8 text-slate-600">
-              <p>
+          <div className="grid grid-cols-1 justify-items-center gap-12 lg:grid-cols-2">
+            <div className="flex max-w-xl flex-col justify-center gap-8">
+              <p className='text-lg text-slate-900'>
                 With BlogHive, you can share your work, get feedback, and
                 collaborate with others on your blogging journey.{' '}
               </p>
-              <p>
+              <p className='text-lg text-slate-900'>
                 And as an open source platform, BlogHive is built and maintained
                 by a community of developers and users who are passionate about
                 helping writers and bloggers succeed.
               </p>
             </div>
             <div>
-              <Image src={communityImg} alt="Community Image" />
+              <Image src={communityImg} alt="Community Image" width={400} height={400} />
             </div>
           </div>
         </section>

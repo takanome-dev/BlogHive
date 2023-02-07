@@ -2,14 +2,6 @@
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    screens: {
-      sm: '320px',
-      md: '640px',
-      _2md: '840px',
-      lg: '1024px',
-      xl: '1280px',
-      _2k: '2000px',
-    },
     extend: {
       colors: {
         slate: {

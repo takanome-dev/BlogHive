@@ -32,33 +32,35 @@ importers:
     specifiers:
       '@types/node': ^18.0.0
       '@types/react': 18.0.26
-      atoms: workspace:*
       autoprefixer: ^10.4.13
+      class-variance-authority: ^0.4.0
+      clsx: ^1.2.1
       eslint: 8.30.0
       eslint-config-custom: workspace:*
       next: 13.1.1
-      next-transpile-modules: 10.0.0
       postcss: ^8.4.20
       prettier: ^2.7.1
       prettier-config-custom: workspace:*
       prettier-plugin-tailwindcss: ^0.1.13
       react: 18.2.0
       react-dom: 18.2.0
+      tailwind-merge: ^1.9.1
       tailwindcss: ^3.2.4
       tsconfig: workspace:*
       typescript: ^4.5.3
     dependencies:
-      atoms: link:../../packages/atoms
+      class-variance-authority: 0.4.0_typescript@4.8.4
+      clsx: 1.2.1
       next: 13.1.1_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+      tailwind-merge: 1.9.1
     devDependencies:
       '@types/node': 18.11.10
       '@types/react': 18.0.26
       autoprefixer: 10.4.13_postcss@8.4.20
       eslint: 8.30.0
       eslint-config-custom: link:../../packages/eslint-config-custom
-      next-transpile-modules: 10.0.0
       postcss: 8.4.20
       prettier: 2.8.1
       prettier-config-custom: link:../../packages/prettier-config-custom
@@ -129,27 +131,6 @@ importers:
       tsconfig: link:../../packages/tsconfig
       tsconfig-paths: 4.1.1
       typescript: 4.7.4
-
-  packages/atoms:
-    specifiers:
-      '@types/react': ^18.0.0
-      '@types/react-dom': ^18.0.0
-      clsx: ^1.2.1
-      eslint: ^8.0.0
-      eslint-config-custom: workspace:*
-      react: ^18.0.0
-      tsconfig: workspace:*
-      typescript: ^4.5.2
-    dependencies:
-      clsx: 1.2.1
-    devDependencies:
-      '@types/react': 18.0.26
-      '@types/react-dom': 18.0.9
-      eslint: 8.30.0
-      eslint-config-custom: link:../eslint-config-custom
-      react: 18.2.0
-      tsconfig: link:../tsconfig
-      typescript: 4.8.4
 
   packages/eslint-config-custom:
     specifiers:
@@ -1676,12 +1657,6 @@ packages:
     resolution: {integrity: sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==}
     dev: true
 
-  /@types/react-dom/18.0.9:
-    resolution: {integrity: sha512-qnVvHxASt/H7i+XG1U1xMiY5t+IHcPGUK7TDMDzom08xa7e86eCeKOiLZezwCKVxJn6NEiiy2ekgX8aQssjIKg==}
-    dependencies:
-      '@types/react': 18.0.26
-    dev: true
-
   /@types/react/18.0.26:
     resolution: {integrity: sha512-hCR3PJQsAIXyxhTNSiDFY//LhnMZWpNNr5etoCqx/iUfGc5gXWtQR2Phl908jVR6uPXacojQWTg4qRpkxTuGug==}
     dependencies:
@@ -2759,6 +2734,17 @@ packages:
   /cjs-module-lexer/1.2.2:
     resolution: {integrity: sha512-cOU9usZw8/dXIXKtwa8pM0OTJQuJkxMN6w30csNRUerHfeQ5R6U3kkU/FtJeIf3M202OHfY2U8ccInBG7/xogA==}
     dev: true
+
+  /class-variance-authority/0.4.0_typescript@4.8.4:
+    resolution: {integrity: sha512-74enNN8O9ZNieycac/y8FxqgyzZhZbxmCitAtAeUrLPlxjSd5zA7LfpprmxEcOmQBnaGs5hYhiSGnJ0mqrtBLQ==}
+    peerDependencies:
+      typescript: '>= 4.5.5 < 5'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      typescript: 4.8.4
+    dev: false
 
   /clean-stack/2.2.0:
     resolution: {integrity: sha512-4diC9HaTE+KRAMWhDhrGOECgWZxoevMc5TlkObMqNSsVU62PYzXZ/SMTjzyGAFF1YusgxGcSWTEXBhp0CPwQ1A==}
@@ -5663,13 +5649,6 @@ packages:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: true
 
-  /next-transpile-modules/10.0.0:
-    resolution: {integrity: sha512-FyeJ++Lm2Fq31gbThiRCrJlYpIY9QaI7A3TjuhQLzOix8ChQrvn5ny4MhfIthS5cy6+uK1AhDRvxVdW17y3Xdw==}
-    deprecated: All features of next-transpile-modules are now natively built-in Next.js 13.1. Please use Next's transpilePackages option :)
-    dependencies:
-      enhanced-resolve: 5.10.0
-    dev: true
-
   /next/13.1.1_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-R5eBAaIa3X7LJeYvv1bMdGnAVF4fVToEjim7MkflceFPuANY3YyvFxXee/A+acrSYwYPvOvf7f6v/BM/48ea5w==}
     engines: {node: '>=14.6.0'}
@@ -6940,6 +6919,10 @@ packages:
     dependencies:
       '@pkgr/utils': 2.3.1
       tslib: 2.4.1
+    dev: false
+
+  /tailwind-merge/1.9.1:
+    resolution: {integrity: sha512-ED9MkiUHlmfh58EC1xHRqXcH1IQyRtmDP0AmXlugYkP2tvfu7ejtjFEHJLJt93mQ7ZJkcqSIgm9M394bq5vOJg==}
     dev: false
 
   /tailwindcss/3.2.4_postcss@8.4.20:

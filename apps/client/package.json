@@ -12,10 +12,12 @@
     "format": "prettier --write **/*.{js,ts,tsx,css,md,json,yml,yaml}"
   },
   "dependencies": {
+    "class-variance-authority": "^0.4.0",
+    "clsx": "^1.2.1",
     "next": "13.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "atoms": "workspace:*"
+    "tailwind-merge": "^1.9.1"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",
@@ -23,7 +25,6 @@
     "autoprefixer": "^10.4.13",
     "eslint": "8.30.0",
     "eslint-config-custom": "workspace:*",
-    "next-transpile-modules": "10.0.0",
     "postcss": "^8.4.20",
     "prettier": "^2.7.1",
     "prettier-config-custom": "workspace:*",
