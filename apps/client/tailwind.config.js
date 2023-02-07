@@ -2,6 +2,14 @@
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    screens: {
+      sm: '320px',
+      md: '640px',
+      _2md: '840px',
+      lg: '1024px',
+      xl: '1280px',
+      _2k: '2000px',
+    },
     extend: {
       colors: {
         slate: {
@@ -15,6 +23,9 @@ module.exports = {
           8: '#152338',
           9: '#0B142A',
         },
+      },
+      backgroundImage: {
+        card: 'linear-gradient(115.8deg, #0061FF -21.78%, #60EFFF 99.47%)',
       },
     },
   },

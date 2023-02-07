@@ -6,8 +6,8 @@ import logoTextBlack from '@/public/logo-text-black.png';
 
 const Footer = () => {
   return (
-    <footer className="flex justify-between border-t border-slate-4 p-16 shadow">
-      <div className="socials">
+    <footer className="flex flex-col md:flex-row _2md:flex-row lg:flex-row justify-between border-t border-slate-4 p-8 lg:p-16 xl:p-16 shadow">
+      <div className="pb-10 md:pr-5">
         <Link href="/">
           <Image src={logoTextBlack} width={200} height={200} alt="Logo" />
         </Link>
@@ -19,25 +19,25 @@ const Footer = () => {
         </div>
         <p>Copyright © BlogHive 2022</p>
       </div>
-      <div className="links flex gap-20">
-        <div className="link-container flex flex-col">
-          <h6>Explore</h6>
-          <Link href="/#">Feed</Link>
-          <Link href="/#">Trending Blogs</Link>
-          <Link href="/#">Tags</Link>
-          <Link href="/#">Search</Link>
+      <div className="flex flex-wrap gap-20">
+        <div className="link-container flex flex-col gap-3">
+          <h6 className="text-slate-400 font-bold text-xl">Explore</h6>
+          <Link href="/#" className='text-lg'>Feed</Link>
+          <Link href="/#" className='text-lg'>Trending Blogs</Link>
+          <Link href="/#" className='text-lg'>Tags</Link>
+          <Link href="/#" className='text-lg'>Search</Link>
         </div>
-        <div className="link-container flex flex-col">
-          <h6>BlogHive</h6>
-          <Link href="/#">About</Link>
-          <Link href="/#">Contact</Link>
-          <Link href="/#">Terms</Link>
-          <Link href="/#">Privacy</Link>
+        <div className="link-container flex flex-col gap-3">
+          <h6 className="text-slate-400 font-bold text-xl">BlogHive</h6>
+          <Link href="/#" className='text-lg'>About</Link>
+          <Link href="/#" className='text-lg'>Contact</Link>
+          <Link href="/#" className='text-lg'>Terms</Link>
+          <Link href="/#" className='text-lg'>Privacy</Link>
         </div>
-        <div className="link-container flex flex-col">
-          <h6>Support</h6>
-          <Link href="/#">Community</Link>
-          <Link href="/#">Discussion</Link>
+        <div className="link-container flex flex-col gap-3">
+          <h6 className="text-slate-400 font-bold text-xl">Support</h6>
+          <Link href="/#" className='text-lg'>Community</Link>
+          <Link href="/#" className='text-lg'>Discussion</Link>
         </div>
       </div>
     </footer>

@@ -19,7 +19,7 @@ not yet functional but is being actively developed. Please "watch" the project a
 - Blogging goals: Allow users to set and track their blogging goals, and offer support and encouragement to help them achieve their objectives.
 
 <details>
-  <summary><h2 style="display:inline;"> Project Structure</h2></summary>
+  <summary><h2 style="display:inline;"> Project Tree</h2></summary>
 
 ```bash
 .
